@@ -5,4 +5,6 @@ package com.example.fcc.myapplication2;
  */
 
 public class Mytest3 {
+
+    int i = 0;
 }
