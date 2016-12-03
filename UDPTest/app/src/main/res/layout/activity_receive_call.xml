@@ -8,14 +8,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MakeCallActivity" >
+    tools:context=".ReceiveCallActivity" >
 
     <TextView
-        android:id="@+id/textViewCalling"
+        android:id="@+id/textViewIncomingCall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/calling"
+        android:text="@string/incomingCall"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <LinearLayout
@@ -25,19 +25,30 @@
         android:gravity="center_horizontal" >
 
         <Button
-            android:id="@+id/buttonEndCall"
+            android:id="@+id/buttonAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accept" />
+
+        <Button
+            android:id="@+id/buttonReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reject" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/buttonEndCall1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/endCall" />
 
     </LinearLayout>
-
-    <ToggleButton
-        android:text="ToggleButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/toggleButton2"
-        android:textOff="@string/lbl_speaker_off"
-        android:textOn="@string/lbl_speaker_on" />
 
 </LinearLayout>

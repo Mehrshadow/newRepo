@@ -32,12 +32,4 @@
 
     </LinearLayout>
 
-    <ToggleButton
-        android:text="ToggleButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/toggleButton2"
-        android:textOff="@string/lbl_speaker_off"
-        android:textOn="@string/lbl_speaker_on" />
-
 </LinearLayout>
